@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template, session
+from flask import Flask, url_for, render_template, session, redirect
 
 
 secretkey = "minhasenhamuitodificil"
