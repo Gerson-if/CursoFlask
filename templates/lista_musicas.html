@@ -21,23 +21,13 @@
     </thead>
 
     <tbody> <!--Agrupa o corpo principal da tebela os que estao com os <td>  de dados-->
+        {% for musica in musicas %}
         <tr><!-- segunda linha-->
-            <td> musica 1</td>
-            <td> cantor x</td>
-            <td> samba</td>
+            <td>{{ musica}}</td>
+            <td></td>
+            <td></td>
         </tr>
-
-        <tr> <!-- terceira linha-->
-            <td> musica 2</td>
-            <td> cantor y</td>
-            <td> pagode</td>
-        </tr>
-
-        <tr> <!--quarta linha-->
-            <td> Musica 3</td>
-            <td> cantor w</td>
-            <td> sertanejo</td>
-        </tr>
+        {% endfor %}
     </tbody>
 
    </table>
