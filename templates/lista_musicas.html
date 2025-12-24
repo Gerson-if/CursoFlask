@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/bootstrap-icons.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <title>Lista de Musicas</title>
 </head>
+
 <body>
-    <h1>Musicas Cadastradas</h1>
-   <table border="1">
+    <h1>Musicas Cadastradas {{ titulo }}</h1>
+   <table border="1"> <!--cria a tabela -->
     <thead> <!--agrupa cabeçalho da tabela normamente com <th>-->
         <tr> <!-- Primeira linha-->
             <th> Musica</th> <!--cria uma celula de cabeçalho-->
