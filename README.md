@@ -36,6 +36,7 @@ def listarMusicas():
                            titulo = 'conteudo da variavel',
                            musicas = lista)
                            ```
+```
 - E no html: 
 ```
  {% for music in musicas %}
