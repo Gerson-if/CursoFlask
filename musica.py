@@ -11,16 +11,16 @@ class Musica:
         self.genero = genero
         
 
-musica01 = Musica('Temporal', 'Hungria', 'Rap')
-musica02 = Musica('Papai banca', 'Mc Ryan Sp', 'Funk')
-musica03 = Musica('Camissa 10', 'Turma do Pagode', 'Pagode')
-
 
 
 
 
 @app.route('/musicas')
 def listarMusicas():
+    musica01 = Musica('Temporal', 'Hungria', 'Rap')
+    musica02 = Musica('Papai banca', 'Mc Ryan Sp', 'Funk')
+    musica03 = Musica('Camissa 10', 'Turma do Pagode', 'Pagode')
+
     lista = [musica01, musica02, musica03]
 
     return render_template('lista_musicas.html', 

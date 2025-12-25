@@ -13,6 +13,7 @@
 
  - Sobre clases e obejetos, podemos criar uma nova classe e retorna este mesmo em uma rota para devolver o mesmo para uma template html, a classe em si pode ser estanciada e usada em uma lista a mesma lista e devolvida para o html, onde acessamos o atributo da classe em questao cujo sera percorrido ou consultado dependendo da estrutura de dados:
  exemplo:
+
  ```
  class Musica:
     def __init__(self, nome, cantorBandaGrupo, genero):
@@ -27,6 +28,8 @@ musica03 = Musica('Camissa 10', 'Turma do Pagode', 'Pagode')
 ```
 - Observamos aqui a criação de uma nova classe, e novos obejetos sendo criados a parti de uma estancia.
 - posterior a isso temos a funcao e o trexo que faz uso dessas informações:
+
+
 ```
 @app.route('/musicas')
 def listarMusicas():
@@ -38,6 +41,7 @@ def listarMusicas():
                            ```
 ```
 - E no html: 
+
 ```
  {% for music in musicas %}
         <tr><!-- segunda linha-->
@@ -47,4 +51,5 @@ def listarMusicas():
             <td>{{ music.genero }}</td>
         </tr>
         {% endfor %}
-        ``` 
+
+``` 
