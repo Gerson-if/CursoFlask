@@ -21,7 +21,7 @@ musica03 = Musica('Camissa 10', 'Turma do Pagode', 'Pagode')
 
 @app.route('/musicas')
 def listarMusicas():
-    lista = ['Terror da Previdencia', 'Lobo Guara', 'Vai e chora']
+    lista = [musica01, musica02, musica03]
 
     return render_template('lista_musicas.html', 
                            titulo = 'conteudo da variavel',
