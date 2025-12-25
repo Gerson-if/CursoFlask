@@ -23,9 +23,10 @@
     <tbody> <!--Agrupa o corpo principal da tebela os que estao com os <td>  de dados-->
         {% for music in musicas %}
         <tr><!-- segunda linha-->
-            <td>{{ music }}</td>
-            <td></td>
-            <td></td>
+            <td>{{ music.nome }}</td> <!-- variavel music sendo percorrido pelo laço for-->
+            <!-- alem disso acessamos o atributo do objeto music, pois este mesmo é que esta sendo percorrido-->
+            <td>{{ music.cantorBanda }}</td>
+            <td>{{ music.genero }}</td>
         </tr>
         {% endfor %}
     </tbody>

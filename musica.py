@@ -25,7 +25,7 @@ def listarMusicas():
 
     return render_template('lista_musicas.html', 
                            titulo = 'conteudo da variavel',
-                           Musicas = lista)
+                           musicas = lista)
 
 
 app.run(debug=True)
