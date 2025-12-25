@@ -27,5 +27,9 @@ def listarMusicas():
                            titulo = 'conteudo da variavel',
                            musicas = lista)
 
+@app.route('/cadastrar')
+def cadastrarMusica():
+    return render_template('cadastrar_musica.html')
+
 
 app.run(debug=True)
