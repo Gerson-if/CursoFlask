@@ -5,17 +5,17 @@
     <title>Cadastrar Musica</title>
 </head>
 <body>
-    <form action="GET">
+    <form  action="/adicionar" method="post">
         <label for="">Nome da Musica: </label> <!--Caixa de texto-->
-        <input type="text"> <!--caixa que recebe dados-->
+        <input type="text" name="txtNome"> <!--caixa que recebe dados-->
 
 
         <label for="">Cantor / Banda / Grupo: </label>
-        <input type="text">
+        <input type="text" name="txtCantor">
 
 
         <label for="">Genero: </label>
-        <input type="text">
+        <input type="text" name="txtGenero">
 
         <button type="submit">Cadastrar Musica</button><!-- tipo submit porque permite enviar os dados do form-->
 
