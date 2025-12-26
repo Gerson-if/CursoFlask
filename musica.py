@@ -45,6 +45,6 @@ def adicionar_musica():
     novaMusica = Musica(nome, cantor, genero) #cria nova musica
     lista.append(novaMusica) #adiciona no fim da lista
 
-    return render_template('lista_musicas.html')
+    return redirect('/musicas')
 
 app.run(debug=True)
