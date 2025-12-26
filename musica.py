@@ -36,7 +36,7 @@ def cadastrarMusica():
     return render_template('cadastrar_musica.html')
 
 
-@app.route('adicionar', methods='POST, ')
+@app.route('/adicionar', methods='POST, ')
 def adicionar_musica():
     nome = request.form('txtNome')
     cantor = request.form('txtCantor')
