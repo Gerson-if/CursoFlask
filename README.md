@@ -64,6 +64,9 @@ def listarMusicas():
  <form  action="/adicionar" method="post"> 
  
 ``` 
+- Na pagina de Cadastrar musica e lista_musicas incialmente ja começãmos a usar as clases do bootstrap para estilização no entanto o uso por enquanto e limitado ja que o foco central é o entendimento sistemico de como o flask, a consulta de dados exibição e criação de dados fucionam, essa visão sistemica possibilitara novas criaçãoes de novos sistemas a parti deste.
+
+
 
 
 
