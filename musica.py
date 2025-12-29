@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template, session, redirect, request
+from flask import Flask, url_for, render_template, redirect, request
 
 
 
@@ -8,23 +8,24 @@ app = Flask(__name__)
 
 
 
-class Musica:
-    def __init__(self, nome, cantorBandaGrupo, genero):
+class Musica: # criação de classe 
+    def __init__(self, nome, cantorBandaGrupo, genero): # o self referencia a propia classe 
         self.nome = nome
         self.cantorBanda = cantorBandaGrupo
         self.genero = genero
         
 
+# aqui criamos instancias da classe Musica 
 musica01 = Musica('Temporal', 'Hungria', 'Rap')
 musica02 = Musica('Papai banca', 'Mc Ryan Sp', 'Funk')
 musica03 = Musica('Camissa 10', 'Turma do Pagode', 'Pagode')
 
-lista = [musica01, musica02, musica03]
+lista = [musica01, musica02, musica03] # aqui criamos uma lista dos nosso obejtos estanciados acima
 
 
 
 
-@app.route('/')
+@app.route('/') # nossa rota incial 
 def listarMusicas():
     return render_template('lista_musicas.html', 
                            titulo = 'conteudo da variavel',
