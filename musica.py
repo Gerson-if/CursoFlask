@@ -39,7 +39,7 @@ def cadastrarMusica():
 
 @app.route('/adicionar', methods=['POST', ])
 def adicionar_musica():
-    nome = request.form['txtNome']
+    nome = request.form['txtNome'] # passa o valor de txtNome da pagina cadastrar_musica.html para a var nome
     cantor = request.form['txtCantor']
     genero = request.form['txtGenero']
 
