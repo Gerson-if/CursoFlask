@@ -60,13 +60,21 @@ def listarMusicas():
 
 - Na rota de criação de uma nova musica, utilizamos uma função, que usa o request, que importamos no começo do codigo, ou seja nessa função vamos pegar os dados do formulario, recuperar os dados e depois devolver usar estes dados em outra template, alem disso usamos estes dados para prencher uma lista, ou seja acrecentamos estes mesmo dados ao final de uma lista. No formulario html precisamos tambem indicar no html que ele usara o metodo POST e nao get, e tambem nomear os inputs do html, ou seja temos como se fosse indentificadores para armazenar e trasmitir os dados, e depois recuperar e gravar e exibir os mesmos. Alem disso para que isso tudo ocorra bem precisamos indicar na Rota que trata de tudo isso, o tipo de metodo que sera usado na pagina de destino que evoca esta rota em questao, alem disso dentro do form precisamos definir sua action quando precionamos o botao cadastrar desta forma: 
 
+- Na rota /adicionar para evitar que o cadastro de musica seja recadastrado todo vez que dermos um f5 importamos o redirect, 
+para usar na nossa rota vamos usar ele no return :  exemplo;
+
+```
+ return redirect('/')
+ 
+ ```
+ 
 ```
  <form  action="/adicionar" method="post"> 
  
 ``` 
 - Na pagina de Cadastrar musica e lista_musicas incialmente ja começãmos a usar as clases do bootstrap para estilização no entanto o uso por enquanto e limitado ja que o foco central é o entendimento sistemico de como o flask, a consulta de dados exibição e criação de dados fucionam, essa visão sistemica possibilitara novas criaçãoes de novos sistemas a parti deste.
 
-
+- Na pagina incial apenas modificamos a rota /musicas para apenas '/' desta forma quando inciamos o serviço ja vamos direto para rota que rediriza a pagina lista_musicas.html, alem disso agora tambem podemos usar o redirecionamento de rotas no retorno desta forma nao precisamos usar toda vez o render_template e alguns casos 
 
 
 

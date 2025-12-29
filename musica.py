@@ -24,7 +24,7 @@ lista = [musica01, musica02, musica03]
 
 
 
-@app.route('/musicas')
+@app.route('/')
 def listarMusicas():
     return render_template('lista_musicas.html', 
                            titulo = 'conteudo da variavel',
@@ -45,6 +45,6 @@ def adicionar_musica():
     novaMusica = Musica(nome, cantor, genero) #cria nova musica
     lista.append(novaMusica) #adiciona no fim da lista
 
-    return redirect('musicas')
+    return redirect('/')
 
 app.run(debug=True)
