@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--difinição da linguagem usada na pagina-->
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title> <!-- definição do titulo da pagina-->
+</head>
+
+<body>
+    <form action="/autenticar" class="form" method="post"> 
+        <!-- aqui tambem dizemos pra qual rota devemos validar os dados no caso a rota autenticar-->
+        <!-- temos uma action aqui que vamos dizer para onde este form deve direcionar os dados-->
+        <!-- tambem temos uma classe aqui dizemos qual classe do bootstrap o html deve usar no caso aqui a classe form-->
+         <!-- alem dizemos que o metoto é post porque o padrao e get-->
+       
+        <fieldset> <!-- criação de uma borda em volta do formulario-->
+            <legend> Entre com suas Informações</legend><!--exibi a legenda do formulario-->
+
+            <label for="">Login</label> <!--elemento que exibe uma legenda em relação ao tipo de entrada de dados do input-->
+            <input type="text" name="txtLogin"> <!-- Entrada de dados input -->
+
+            <label for="">Senha</label> 
+            <input type="password" name="txtSenha"> <!-- no name="txtSenha" usamos depois para recuperar a informação-->
+
+            <button type="submit"> Logar </button> <!-- criação do  botao do tipo submit para envio de dados-->
+
+        </fieldset>
+      
+    </form>
+
+</body>
+</html>
