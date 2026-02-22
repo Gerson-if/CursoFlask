@@ -77,5 +77,13 @@ para usar na nossa rota vamos usar ele no return :  exemplo;
 - Na pagina incial apenas modificamos a rota /musicas para apenas '/' desta forma quando inciamos o serviço ja vamos direto para rota que rediriza a pagina lista_musicas.html, alem disso agora tambem podemos usar o redirecionamento de rotas no retorno desta forma nao precisamos usar toda vez o render_template e alguns casos 
 
 
+- na aula de validando senha do usuario: é possivel comprender que cada rota sua responsabilidade, por exemplo podemos ter
+varias rotas porem algumas sao evocadas em outras rotas ou apenas informamos ao HTML que vamos usar esta rota, como e 
+o caso da tela de logim, onde temos duas rotas, uma pra rederização da template e outra pra validação de dados. e estas duas rotas
+trabalham juntas mas com responsabilidades diferentes. Com uso e metodos como POST ou GEt oque é menos comum.
+
+
+
+
 
 
