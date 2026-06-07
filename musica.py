@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template, redirect, request
+from flask import Flask, url_for, render_template, redirect, request, flash
 
 
 
@@ -72,11 +72,13 @@ def login():
 #rota de autenticação responsavel pela validação de dados da tela de login.
 @app.route('/autenticar', methods=['POST', ])
 def autenticar():
+    aviso:str  = " Login ou senha incorretos"
     #se verdadeiro retorne para inicio '/'
     if request.form['txtSenha'] == 'admin':
         return redirect('/')
     else:
-        # se falso retorne para login 
+        # senao retorne para login 
+        flash('erro')
         return redirect('/login')
 
 #declaração de execução da aplicação, com debug true sem necessidade de renicio para teste.
